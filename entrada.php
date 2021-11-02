@@ -17,7 +17,15 @@
             </div>
 
             <ul>
-                
+                <li>
+                    <p>Cadastrar itens novos</p>
+                </li>
+                <li>
+                    <p>Cadastrar</p>
+                </li>
+                <li>
+                    <p>Saída de Produtos</p>
+                </li>
                 <li>
                     <p>Voltar</p>
                 </li>
