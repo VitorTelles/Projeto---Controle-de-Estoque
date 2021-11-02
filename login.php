@@ -1,4 +1,21 @@
-
+<?php
+	if(isset($_COOKIE['lembrar'])){
+		$user = $_COOKIE['user'];
+		$password = $_COOKIE['password'];
+		$sql = MySql::conectar()->prepare("SELECT * FROM `tb_usuarios` WHERE user = ? AND password = ?");
+		$sql->execute(array($user,$password));
+		if($sql->rowCount() == 1){
+				$info = $sql->fetch();
+				$_SESSION['login'] = true;
+				$_SESSION['user'] = $user;
+				$_SESSION['password'] = $password;
+				$_SESSION['cargo'] = $info['cargo'];
+				$_SESSION['nome'] = $info['nome']; 
+				$_SESSION['img'] = $info['img'];
+				Painel::redirect(INCLUDE_PATH);
+		}
+	}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,15 +34,22 @@
             $sql = MySql::conectar()->prepare("SELECT * FROM `tb_usuarios` WHERE user = ? AND password = ?");
             $sql->execute(array($user,$password));
             if($sql->rowCount() == 1){
+                $info = $sql->fetch();
                 //login é verdadeiro. Vamos logar...
                 $_SESSION['login'] = true;
                 $_SESSION['user'] = $user;
                 $_SESSION['password'] = $password;
-                header('Location: '.INCLUDE_PATH); 
-                die();
+                $_SESSION['nome'] = $info['nome'];
+                $_SESSION['img'] = $info['img'];
+                if(isset($_POST['lembrar'])){
+                    setcookie('lembrar',true,time()+(60*60*24),'/');
+                    setcookie('user',$user,time()+(60*60*24),'/');
+					setcookie('password',$password,time()+(60*60*24),'/');
+                }
+                Painel::redirect(INCLUDE_PATH);
             }else{
                 //Falhou
-                echo 'Usuário e senha incorretos';
+                echo '<script> alert("Usuário e senha incorretos!"); </script>';
             }
         }
     ?>
@@ -46,7 +70,7 @@
                 <input type="password" name="password" placeholder="Digite sua senha" required>
             </div>
             <div class="card-group">
-                <label> <input type="checkbox"> Lembrar-me</label>
+                <label> <input type="checkbox" name="lembrar"> Lembrar-me</label>
             </div>
             <div class="card-group">
                 <button class="btn" type="submit" name="acao" >Entrar</button>
