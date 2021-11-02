@@ -1,3 +1,4 @@
+<?php include('config.php');?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,6 +9,24 @@
     <title>Controle de Estoque</title>
 </head>
 <body>
+    <?php 
+        if(isset($_POST['acao'])){
+            $user = $_POST['user'];
+            $password = $_POST['password'];
+            $sql = MySql::conectar()->prepare("SELECT * FROM `tb_usuários` WHERE user = ? AND password = ?");
+            $sql->execute(array($user, $password));
+            if($sql->rowCount() == 1){
+                //login é verdadeiro. Vamos logar...
+                $_SESSION['login'] = true;
+                $_SESSION['user'] = $user;
+                $_SESSION['password'] = $password;
+                header('Location: '.INCLUDE_PATH); 
+            }else{
+                //Falhou
+                echo 'Usuário e senha incorretos';
+            }
+        }
+    ?>
         <!--  Formulário de login -->
     <form class="form" action="#" method="post">
         <div class="card">
