@@ -31,7 +31,7 @@
     <form class="form" action="#" method="post">
         <div class="card">
             <div class="card-top">
-                <img id="icon" src="./imagens/user.png" alt="">
+                <img id="icon" src="./imagens/xerife_icon.png" alt="">
                 <h2 class="title"> Painel de Controle</h2>
                 <p>Faça seu login</p>
             </div>
