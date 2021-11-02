@@ -1,0 +1,61 @@
+body{
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+.form{
+    width: 400px;
+    margin: auto;
+    padding-top:40px;
+    
+}
+.card{
+    box-shadow: 8px 8px 10px  mediumblue;
+    background-color: white;
+    padding:30px;
+    border-radius:15px;   
+}
+.card-top{
+    text-align: center;
+}
+#icon{
+    width: 100px;
+    height: 100px;
+    border-radius:50px; 
+    box-shadow: 10px 10px 5px #ccc;
+}
+label{
+    padding:5px;
+    font-size: 18px;
+}
+.card-group > label{
+    width: 100%;
+    color: darkblue;
+    display:block;
+}
+.card-group > input {
+    border:2px solid;
+    border-radius: 8px;
+    outline: 0;
+    width: 100%;
+    height: 25px;
+    padding:5px;
+}
+
+.title{
+    color:darkblue;
+}
+
+.card-group > .btn{
+    width: 100%;
+    height:40px;
+    border:0px;
+    border-radius: 20px;
+    padding:8px;
+    color:white;
+    background-color: darkblue;
+    font-size: 20px;
+    outline: 0;
+}
+.btn:hover{
+    background-color: blue;
+}
