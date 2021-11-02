@@ -13,6 +13,7 @@
             <div class="logo">
                 <img src="./imagens/xerife_icon.png">
             </div>
+            <label>Usuário: <?php  echo $_SESSION['user']; ?></label>
             <button>&#9776;</button>
             
             <ul>

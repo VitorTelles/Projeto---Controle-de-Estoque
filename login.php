@@ -22,6 +22,7 @@
                 $_SESSION['user'] = $user;
                 $_SESSION['password'] = $password;
                 header('Location: '.INCLUDE_PATH); 
+                die();
             }else{
                 //Falhou
                 echo 'Usuário e senha incorretos';
