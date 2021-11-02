@@ -21,6 +21,8 @@ body{
 ul{
     list-style: none;
     padding: 0;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 li{
     padding: 0 20px;
@@ -58,6 +60,9 @@ button{
     right: 10px ;
     top: 10px;
     display: none;
+}
+button:focus ~ ul{
+    height: 230px;
 }
 
 @media (max-width: 700px) {
