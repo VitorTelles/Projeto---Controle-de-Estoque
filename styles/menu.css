@@ -40,9 +40,11 @@ nav, ul{
     display: flex;
     flex-direction: row;
 }
-h1{
+img{
     margin: 0;
     padding: 10px;
+    width: 15%;
+    height: 15%;
 }
 li:hover,
 h1:hover,
@@ -78,8 +80,10 @@ button:focus ~ ul{
         padding: 0;
         align-items: flex-start;
     }
-    h1{
-        margin: 10px;
+    img{
+        margin: 0;
+        width: 10%;
+        height: 10%;
     }
     button{
         display: flex;

@@ -7,7 +7,7 @@
     <body>
         <nav>
             <div class="logo">
-                <h1>Almoxerife</h1>
+                <img src="./imagens/xerife_icon.png">
             </div>
             <button>&#9776;</button>
             
