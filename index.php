@@ -8,6 +8,7 @@
 </head>
 <body>
     <input type="submit" name="acao" value="Olá">
+    <input type="submit" name="acao" value="Tchau">
     
     <script>
 
