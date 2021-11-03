@@ -25,13 +25,13 @@
             
             <ul>
                 <li>
-                    <p>Cadastro de Produtos</p>
+                    <p href="entrada.php"><i class="fas fa-plus-square"></i> Cadastrar</p>
                 </li>
                 <li>
-                    <p>Entrada de Produtos</p>
+                    <p><i class="fas fa-calculator"></i> Entrada</p>
                 </li>
                 <li>
-                    <p>Saída de Produtos</p>
+                    <p><i class="fas fa-sync-alt"></i> Saída Produto</p>
                 </li>
             </ul>
             <div class="but_sair">
