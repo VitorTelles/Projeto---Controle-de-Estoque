@@ -61,8 +61,10 @@ label{
     background-color: black;
     font-size: 20px;
     outline: 0;
+    transition: 0.5s;
 }
 .btn:hover{
     background-color: #fed330;
     color: black ;
+    
 }
