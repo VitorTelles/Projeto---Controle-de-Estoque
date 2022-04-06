@@ -35,8 +35,9 @@
                 </li>
             </ul>
             <div class="but_sair">
-            <a href="<?php echo INCLUDE_PATH ?>?logout"><i class="fas fa-sign-out-alt"></i> Sair</a>
+            <a href="<?php echo INCLUDE_PATH ?>?logout"><i class="fa fa-sign-out-alt"></i> Sair</a>
             </div>
         </nav>
+        
     </body>
 </html>
