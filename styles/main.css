@@ -63,6 +63,10 @@ label{
     text-decoration: none;
     color: #fed330;
 }
+
+.menu-wraper{
+    text-align: left;
+}
 @media (max-width: 1024px) {
     nav, ul{
         flex-direction: column;
