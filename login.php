@@ -41,6 +41,7 @@
                 $_SESSION['password'] = $password;
                 $_SESSION['nome'] = $info['nome'];
                 $_SESSION['img'] = $info['img'];
+                $_SESSION['cargo'] = $info['cargo'];
                 if(isset($_POST['lembrar'])){
                     setcookie('lembrar',true,time()+(60*60*24),'/');
                     setcookie('user',$user,time()+(60*60*24),'/');

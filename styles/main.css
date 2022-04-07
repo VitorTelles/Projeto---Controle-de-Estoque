@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Open Sans";
 }
 html, body{
     height: 100%;
@@ -11,13 +12,6 @@ html, body{
 .clear{clear: both;}
 .center{padding: 0 2%; margin: 0 auto;}
 
-.menu{
-    overflow-y: auto;
-    height: 100%;
-    background: #636e72;
-    float: left;
-    width: 300px;
-}
 
 header{
     float: left;
@@ -37,4 +31,41 @@ header{
     font-size: 22px;
     color:#f1c40f;
     cursor: pointer;
+}
+div.menu{
+    overflow-y: auto;
+    height: 100%;
+    background: #636e72;
+    float: left;
+    width: 300px;
+}
+div.box-usuario{
+    text-align: center;
+    padding: 10px;
+}
+.avatar-usuario{
+    text-align: left;
+    display: inline-block;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid #2d3436;
+}
+.avatar-usuario i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 50px;
+    color: #2d3436;
+}
+.nome-usuario{
+    text-align: center;
+    margin-top: 10px;
+}
+.nome-usuario p{
+    color: #bdc3c7;
+    font-size: 18px;
+    font-weight: normal;
 }

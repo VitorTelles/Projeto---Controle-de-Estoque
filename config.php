@@ -20,4 +20,12 @@ define('USER','root');
 define('PASSWORD','');
 define('DATABASE','controle_estoque');
 
+//Funções úteis
+function pegaCargo($cargo){
+	$arr = [
+		'0' => 'Normal',
+		'1' => 'Sub Administrador',
+		'2' => 'Administrador'];
+	return $arr[$cargo];
+}
 ?>
