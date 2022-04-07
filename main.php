@@ -18,23 +18,25 @@
     <!-- MENU DE OPÇÕES-->
     <body>
         <div class="menu">
-            <div class="box-usuario">
-                <?php 
-                    if($_SESSION['img'] == ''){
-                ?>
-                    <div class="avatar-usuario">
-                        <i class="fa fa-user"></i>
-                    </div><!--avatar-usuario-->
-                <?php }else{ ?>
-                    <div class="imagem-usuario">
-                        <img src="<?php echo INCLUDE_PATH?>?imagens/<?php echo $_SESSION['img'];?>"/>
-                    </div><!--avatar-usuario-->
-                <?php } ?>
-                <div class="nome-usuario">
-                    <p><?php echo $_SESSION['nome']?></p>
-                    <p><?php echo pegaCargo($_SESSION['cargo']); ?></p>
-                </div>
-            </div><!--box-usuario-->
+            <div class="menu-wraper">
+                <div class="box-usuario">
+                    <?php 
+                        if($_SESSION['img'] == ''){
+                    ?>
+                        <div class="avatar-usuario">
+                            <i class="fa fa-user"></i>
+                        </div><!--avatar-usuario-->
+                    <?php }else{ ?>
+                        <div class="imagem-usuario">
+                            <img src="<?php echo INCLUDE_PATH?>?imagens/<?php echo $_SESSION['img'];?>"/>
+                        </div><!--avatar-usuario-->
+                    <?php } ?>
+                    <div class="nome-usuario">
+                        <p><?php echo $_SESSION['nome']?></p>
+                        <p><?php echo pegaCargo($_SESSION['cargo']); ?></p>
+                    </div>
+                </div><!--box-usuario-->
+            </div><!--menu-wraper-->
         </div><!--MENU LATERAL-->
             
         <header>
@@ -45,8 +47,19 @@
                        <div class="logout">
                             <a href="<?php echo INCLUDE_PATH?>?logout"><i class="fa fa-sign-out-alt"></i></a>
                         </div><!--logout-->
-                    <div class="clear"></div><!--estou usando flutuação, o que obriga a limpar-->
-                </div><!--center-->   
+                        <div class="clear"></div><!--estou usando flutuação, o que obriga a limpar-->
+                </div><!--center--> 
+                  
             </header>
+
+        <!--INICIO DO CONTEUDO DO PAINEL-->
+
+        <div class="content">
+             
+             <div class="clear"></div>
+        </div><!--content-->
+
+        <script src="<?php echo INCLUDE_PATH?>scripts/jquery.js"></script>
+        <script src="<?php echo INCLUDE_PATH?>scripts/main.js"></script>
     </body>
 </html>

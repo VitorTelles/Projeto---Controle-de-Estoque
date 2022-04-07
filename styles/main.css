@@ -6,15 +6,16 @@
 }
 html, body{
     height: 100%;
-    background: #dfe6e9;
+    background: #bdc3c7;
 }
 /*classes globais*/
 .clear{clear: both;}
 .center{padding: 0 2%; margin: 0 auto;}
 
-
+/*Style do Menu e Header*/
 header{
-    float: left;
+    position: relative;
+    left: 300px;
     padding: 15px 0;
     background-color: #2d3436;
     width: calc(100% - 300px);
@@ -32,12 +33,19 @@ header{
     color:#f1c40f;
     cursor: pointer;
 }
+.menu-wraper{
+    width: 300px;
+}
 div.menu{
+    overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
     background: #636e72;
     float: left;
     width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 div.box-usuario{
     text-align: center;
@@ -68,4 +76,39 @@ div.box-usuario{
     color: #bdc3c7;
     font-size: 18px;
     font-weight: normal;
+}
+/*FIM STYLE MENU E HEADER*/
+
+/*CONTEUDO DO PAINEL*/
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 48%;
+}
+.left{
+    float: left;
+}
+right{
+    float: right;
+}
+.content{
+    width: calc(100% - 300px);
+    position: relative;
+    left: 300px;
+    padding: 10px;
+}
+.box-content{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/*MEDIAS*/
+
+@media screen and (max-width: 768px){
+    .menu{display: none;}
+    .content{width: 100%; left: 0;}
+    header{left: 0; width: 100%;}
 }
