@@ -14,36 +14,19 @@
     <link rel="stylesheet" href="./styles/main.css">
     <title>Controle de Estoque</title>
     </head>
-    <!-- Opções do Menu-->
+    <!-- MENU DE OPÇÕES-->
     <body>
-        <!--HTML + PHP da barra de navegação-->
-        <nav>
-            <div class="logo">
-                <img src="./imagens/xerife_icon.png">
-            </div>
-            <label><i class="far fa-user"></i> <?php  echo $_SESSION['nome']; ?></label>
-            <button>&#9776;</button>
-            
-            <ul>
-                <li>
-                    <p href="entrada.php"><i class="fas fa-plus-square"></i> Cadastrar</p>
-                </li>
-                <li>
-                    <p><i class="fas fa-calculator"></i> Entrada</p>
-                </li>
-                <li>
-                    <p><i class="fas fa-sync-alt"></i> Saída Produto</p>
-                </li>
-            </ul>
-            <div class="but_sair">
-            <a href="<?php echo INCLUDE_PATH ?>?logout"><i class="fa fa-sign-out-alt"></i> Sair</a>
-            </div>
-        </nav>
-        <!--Fim da barra de navegação-->
-
-        <div class="menu-wraper">
-            <h2>Teste de div</h2>
-        </div>
-        
+        <div class="menu"></div><!--MENU LATERAL-->
+            <header>
+                 <div class="center">
+                     <div class="menu-btn">
+                        <i class="fa fa-bars"></i>
+                     </div><!--menu-btn-->
+                       <div class="logout">
+                            <a href="<?php echo INCLUDE_PATH?>?logout"><i class="fa fa-sign-out-alt"></i></a>
+                        </div><!--logout-->
+                    <div class="clear"></div><!--estou usando flutuação, o que obriga a limpar-->
+                </div><!--center-->   
+            </header>
     </body>
 </html>

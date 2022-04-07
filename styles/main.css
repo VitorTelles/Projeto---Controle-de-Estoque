@@ -1,99 +1,40 @@
-body{
-    background-color: lightgrey;
-    font-family: sans-serif;
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-ul{
-    list-style: none;
-    padding: 0;
-    overflow: hidden;
-    transition: all 0.5s;
-}
-li{
-    padding: 0 20px;
-    border-radius: 20px;
-}
-nav{
-    background-color: #161616;
-    padding: 0 20px;
-    justify-content: space-between;
-    align-items: center;
-}
-p{
-    color: #fed330;
-}
-nav, ul{
-    display: flex;
-    flex-direction: row;
-}
-img{
+/*CSS DO PAINEL DE CONTROLE*/
+*{
     margin: 0;
-    padding: 10px;
-    width: 13%;
-    height: 13%;
+    padding: 0;
 }
-li:hover,
-button:hover {
-    cursor: pointer;
-    opacity: 0.8;
-    background-color: rgba(255,255,255, 0.2);
-    transition: all 1s;
+html, body{
+    height: 100%;
+    background: #dfe6e9;
 }
-button{
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 35px;
-    position: absolute;
-    right: 10px ;
-    top: 10px;
-    display: none;
-}
-button:focus ~ ul{
-    height: 230px;
-}
-label{
-    color: #fed330;
-    flex-direction: row;
-    text-align: left;
-}
-.but_sair a{
-    text-decoration: none;
-    color: #fed330;
+/*classes globais*/
+.clear{clear: both;}
+.center{padding: 0 2%; margin: 0 auto;}
+
+.menu{
+    overflow-y: auto;
+    height: 100%;
+    background: #636e72;
+    float: left;
+    width: 300px;
 }
 
-.menu-wraper{
-    text-align: left;
+header{
+    float: left;
+    padding: 15px 0;
+    background-color: #2d3436;
+    width: calc(100% - 300px);
 }
-@media (max-width: 1024px) {
-    nav, ul{
-        flex-direction: column;
-    }
-    ul {
-        text-align: center;
-        margin: 0;
-        height: 0;
-    }
-    nav{
-        padding: 0;
-        align-items: flex-start;
-    }
-    img{
-        margin: 0;
-        width: 10%;
-        height: 10%;
-    }
-    button{
-        display: flex;
-    }
-    li, ul{
-        width: 100%;
-    }
-    .but_sair a{
-        flex-direction: column;
-        text-align: center;
-        position: relative;
-    }
+.logout{
+    float: right;
+}
+.logout a{
+    color: #f1c40f;
+    font-size: 22px;
+}
+.menu-btn{
+    float: left;
+    font-size: 22px;
+    color:#f1c40f;
+    cursor: pointer;
 }
