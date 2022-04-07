@@ -36,6 +36,14 @@
                         <p><?php echo pegaCargo($_SESSION['cargo']); ?></p>
                     </div>
                 </div><!--box-usuario-->
+                <div class="itens-menu">
+                    <h2>Cadastros</h2>
+                    <a href="">Cadastrar Produtos</a>
+                    <a href="">Cadastrar Usuário</a>
+                    <h2>Consultas</h2>
+                    <a href="">Consultar Produtos</a>
+                    <a href="">Listar Usuários</a>
+                </div>
             </div><!--menu-wraper-->
         </div><!--MENU LATERAL-->
             
