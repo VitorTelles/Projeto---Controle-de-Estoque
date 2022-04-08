@@ -43,6 +43,11 @@
                     <h2>Consultas</h2>
                     <a href="">Consultar Produtos</a>
                     <a href="">Listar Usuários</a>
+                    <h2>Relatórios</h2>
+                    <a href="">Emitir Relatório</a>
+                    <h2>Movimentos</h2>
+                    <a href="">Entrada no Estoque</a>
+                    <a href="">Saída no Estoque</a>
                 </div>
             </div><!--menu-wraper-->
         </div><!--MENU LATERAL-->
