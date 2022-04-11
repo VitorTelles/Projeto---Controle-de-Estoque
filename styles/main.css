@@ -49,6 +49,7 @@ div.menu{
     position: fixed;
     left: 0;
     top: 0;
+    padding: 10px 0;
 }
 div.box-usuario{
     text-align: center;
@@ -70,6 +71,18 @@ div.box-usuario{
     -ms-transform: translate(-50%,-50%);
     font-size: 50px;
     color: #2d3436;
+}
+.imagem-usuario{
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    border: 3px solid #2d3436;
+    border-radius: 50%;
+}
+.imagem-usuario img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
 }
 .nome-usuario{
     text-align: center;
@@ -103,11 +116,34 @@ right{
 }
 .box-content{
     background: white;
-    padding: 10px;
-    margin-bottom: 10px;
-    
+    padding: 10px 0;
+    margin-bottom: 10px; 
+    width: calc(100% - 25px);
 }
-
+.items-menu{
+    margin-top: 30px;
+}
+.items-menu h2{
+    text-align: left;
+    font-weight: bold;
+    font-size: 17px;
+    background: #2d3436;
+    color: #f1c40f;
+    padding: 8px;
+    font-style: oblique;
+}
+.items-menu a{
+    display: block;
+    padding: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(102, 101, 101);
+    font-weight: bold;
+}
+.items-menu i{
+    font-size: 20px;
+}
 /*MEDIAS*/
 
 @media screen and (max-width: 768px){
