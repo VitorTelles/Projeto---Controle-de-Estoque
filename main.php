@@ -36,19 +36,22 @@
                         <p><?php echo pegaCargo($_SESSION['cargo']); ?></p>
                     </div>
                 </div><!--box-usuario-->
-                <div class="itens-menu">
+                <div class="items-menu">
                     <h2>Cadastros</h2>
                     <a href="">Cadastrar Produtos</a>
-                    <a href="">Cadastrar Usuário</a>
+                    <a href="">Cadastrar Clientes</a>
                     <h2>Consultas</h2>
                     <a href="">Consultar Produtos</a>
-                    <a href="">Listar Usuários</a>
+                    <a href="">Listar Clientes</a>
                     <h2>Relatórios</h2>
                     <a href="">Emitir Relatório</a>
                     <h2>Movimentos</h2>
                     <a href="">Entrada no Estoque</a>
                     <a href="">Saída no Estoque</a>
-                </div>
+                    <h2>Administração do Painel</h2>
+                    <a href="">Inserir novo usuário</a>
+                    <a href="">Editar usuário</a>
+                </div><!--items-menu-->
             </div><!--menu-wraper-->
         </div><!--MENU LATERAL-->
             
@@ -67,8 +70,16 @@
 
         <!--INICIO DO CONTEUDO DO PAINEL-->
 
-        <div class="content">
-             
+        <div class="content left w100">
+             <h2><i class="fa fa-home">Links Rápidos do Painel</i></h2>
+
+             <div class="box-rapidos">
+                  <div class="box-rapidos-single">
+                      <div class="box-rapidos-wraper"> 
+                        <h2>Saída de produtos</h2>
+                      </div><!--box-rapidos-wraper-->
+                  </div><!--box-rapidos-single-->  
+             </div><!--box-rapidos-->
              <div class="clear"></div>
         </div><!--content-->
 
