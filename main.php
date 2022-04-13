@@ -39,7 +39,7 @@
                 </div><!--box-usuario-->
                 <div class="items-menu">
                     <h2>Cadastros  <i class="bi bi-bag-plus"></i></h2>
-                    <a href="">Cadastrar Produtos</a>
+                    <a href="<?php echo INCLUDE_PATH?>cadastrar-produtos">Cadastrar Produtos</a>
                     <a href="">Cadastrar Clientes</a>
                     <h2>Consultas  <i class="bi bi-search"></i></h2>
                     <a href="">Consultar Produtos</a>
@@ -62,6 +62,7 @@
                         <i class="fa fa-bars"></i>
                      </div><!--menu-btn-->
                        <div class="logout">
+                            <a href="<?php echo INCLUDE_PATH?>"><i class="bi bi-house-door-fill"></i> <span>Página Inicial</span></a>
                             <a href="<?php echo INCLUDE_PATH?>?logout"><i class="fa fa-sign-out-alt"></i></a>
                         </div><!--logout-->
                         <div class="clear"></div><!--estou usando flutuação, o que obriga a limpar-->
@@ -70,20 +71,11 @@
             </header>
 
         <!--INICIO DO CONTEUDO DO PAINEL-->
-
-        <div class="content left">
-            <div class="box-content">
-            <h2><i class="fa fa-home"></i> Atalhos </h2>
-                <div class="box-rapidos">
-                    <div class="box-rapidos-single">
-                        <div class="box-rapidos-wraper"> 
-                            <h2>Saída de produtos</h2>
-                        </div><!--box-rapidos-wraper-->
-                    </div><!--box-rapidos-single-->  
-                </div><!--box-rapidos-->
-            </div>
-             <div class="clear"></div>
-        </div><!--content-->
+        <div class="content">
+            <?php echo Painel::carregarPagina();?>
+        </div>
+        
+        
 
         <script src="<?php echo INCLUDE_PATH?>scripts/jquery.js"></script>
         <script src="<?php echo INCLUDE_PATH?>scripts/main.js"></script>

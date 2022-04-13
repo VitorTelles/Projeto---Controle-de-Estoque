@@ -1,7 +1,7 @@
 $(function(){
     var open = true;
     var windowSize = $(window)[0].innerWidth;
-    var targetSizeMenu = (windowSize <= 400) ? 200 : 300;
+    var targetSizeMenu = (windowSize <= 400) ? 200 : 250;
     if(windowSize <= 768){
         $('.menu').css('width',0).css('padding',0);
         open = false;
@@ -24,7 +24,7 @@ $(function(){
             $('.menu').animate({'width':targetSizeMenu+'px'}, function(){
                 open = true;
             });
-            $('.content,header').css('width','calc(100% - 300px)');
+            $('.content,header').css('width','calc(100% - 250px)');
             $('.content,header').animate({'left':targetSizeMenu+'px'}, function(){
                 open = true;
             });
