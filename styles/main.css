@@ -197,6 +197,26 @@ div.box-usuario{
 	padding: 10px 0;
 	font-size: 26px;
 }
+
+/*Alertas úteis!*/
+
+.box-alert{
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 12px;
+}
+.sucesso{
+    background: #6ab04c;
+    color: white;
+    font-weight: bold;
+}
+.erro{
+    background: #eb4d4b;
+    color: white;
+    font-weight: bold;
+}
+
 /*MEDIAS*/
 
 @media screen and (max-width: 768px){

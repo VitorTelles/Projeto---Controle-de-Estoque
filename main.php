@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f3997679a4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/editar-usuario.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Controle de Estoque</title>
@@ -51,7 +52,7 @@
                     <a href="">Saída no Estoque</a>
                     <h2>Administração do Painel  <i class="bi bi-gear"></i></h2>
                     <a href="">Inserir novo usuário</a>
-                    <a href="">Editar usuário</a>
+                    <a href="<?php echo INCLUDE_PATH?>editar-usuario">Editar usuário</a>
                 </div><!--items-menu-->
             </div><!--menu-wraper-->
         </div><!--MENU LATERAL-->
