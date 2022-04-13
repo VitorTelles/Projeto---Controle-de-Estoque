@@ -1,5 +1,5 @@
 <div class="box-content w100">
-		<h2><i class="bi bi-emoji-sunglasses"></i> - Bem vindo!</h2>
+		<h2><i class="bi bi-stack"></i> - Bem vindo!</h2>
 		<div class="box-metricas">
 			<div class="box-metrica-single">
 				<div class="box-metrica-wraper">
