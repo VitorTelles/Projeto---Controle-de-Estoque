@@ -36,6 +36,31 @@
                 echo '<div class="box-alert erro"><i class="bi bi-exclamation-circle"></i> '.$mensagem.'</div>';
             }
         }
+        public static function imagemValida($imagem){
+            if($imagem['type'] == 'image/jpeg' || $imagem['type'] == 'image/jpg' || $imagem['type'] == 'image/png'){
+                $tamanho = intVal($imagem['size'] / 1024);
+                if($tamanho < 300){
+                    return true;
+                }else{
+                    return false;
+                }
+                return true;
+            }else{
+                return false;
+            }
+        }
+        public static function uploadFile($file){
+            if(move_uploaded_file($file['tmp_name'],BASE_DIR.'/imagens/'.$file['name'])){
+                return $file['name'];
+            }else{
+                return false;
+            }
+               
+        }
+        public static function deleteFile($file){
+            @unlink(BASE_DIR.'/imagens/'.$file);
+        }
+        
     }
 
 ?>

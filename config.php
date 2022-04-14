@@ -14,6 +14,7 @@ session_start();
 	
 
 define('INCLUDE_PATH','http://localhost/Controle%20de%20Estoque/Projeto---Controle-de-Estoque/');
+define('BASE_DIR',__DIR__);
 //Conectar com Banco de Dados
 define('HOST','localhost');
 define('USER','root');
