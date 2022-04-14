@@ -169,7 +169,7 @@ div.box-usuario{
 	float: left;
 	position: relative;
 	width: 30%;
-	background: #F4B03E;
+	background: #f4b03e;
 	border: 5px solid white;
     border-radius: 15px;
 }
@@ -217,6 +217,9 @@ div.box-usuario{
     font-weight: bold;
 }
 
+.menu-active{
+    background: #bb8900;
+}
 /*MEDIAS*/
 
 @media screen and (max-width: 768px){

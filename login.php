@@ -59,11 +59,11 @@
         <div class="card">
             <div class="card-top">
                 <img id="icon" src="./imagens/xerife_icon.png" alt="">
-                <h2 class="title"> Painel de Controle</h2>
+                <h2 class="title"> Controle de Estoque</h2>
                 <p>Faça seu login</p>
             </div>
             <div class="card-group">
-                <label>Email:</label>
+                <label>Usuário:</label>
                 <input type="text" name="user" placeholder="Digite seu email" required>
             </div>
             <div class="card-group">

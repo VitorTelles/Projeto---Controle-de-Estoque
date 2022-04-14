@@ -40,19 +40,19 @@
                 </div><!--box-usuario-->
                 <div class="items-menu">
                     <h2>Cadastros  <i class="bi bi-bag-plus"></i></h2>
-                    <a href="<?php echo INCLUDE_PATH?>cadastrar-produtos">Cadastrar Produtos</a>
-                    <a href="">Cadastrar Clientes</a>
+                    <a <?php selecionadoMenu('cadastrar-produtos');?> href="<?php echo INCLUDE_PATH?>cadastrar-produtos"> Cadastrar Produtos</a>
+                    <a <?php selecionadoMenu('cadastrar-clientes');?> href=""> Cadastrar Clientes</a>
                     <h2>Consultas  <i class="bi bi-search"></i></h2>
-                    <a href="">Consultar Produtos</a>
-                    <a href="">Listar Clientes</a>
+                    <a <?php selecionadoMenu('consultar-produtos');?> href=""> Consultar Produtos</a>
+                    <a <?php selecionadoMenu('listar-clientes');?> href=""> Listar Clientes</a>
                     <h2>Relatórios  <i class="bi bi-clipboard2-data"></i></h2>
-                    <a href="">Emitir Relatório   </a>
+                    <a <?php selecionadoMenu('relatorios');?> href=""> Emitir Relatório   </a>
                     <h2>Movimentos  <i class="bi bi-arrow-down-up"></i></h2>
-                    <a href="">Entrada no Estoque</a>
-                    <a href="">Saída no Estoque</a>
+                    <a <?php selecionadoMenu('entrada-estoque');?> href=""> Entrada no Estoque</a>
+                    <a <?php selecionadoMenu('saida-estoque');?> href=""> Saída no Estoque</a>
                     <h2>Administração do Painel  <i class="bi bi-gear"></i></h2>
-                    <a href="">Inserir novo usuário</a>
-                    <a href="<?php echo INCLUDE_PATH?>editar-usuario">Editar usuário</a>
+                    <a <?php selecionadoMenu('cadastrar-usuario');?> <?php verificaPermissaoMenu(2);?> href="<?php echo INCLUDE_PATH?>cadastrar-usuario"> Inserir novo usuário</a>
+                    <a <?php selecionadoMenu('editar-usuario');?> href="<?php echo INCLUDE_PATH?>editar-usuario"> Editar usuário</a>
                 </div><!--items-menu-->
             </div><!--menu-wraper-->
         </div><!--MENU LATERAL-->

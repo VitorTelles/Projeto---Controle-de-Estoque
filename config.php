@@ -21,12 +21,40 @@ define('USER','root');
 define('PASSWORD','');
 define('DATABASE','controle_estoque');
 
-//Funções úteis
+//Funções úteis do Painel de controle
 function pegaCargo($cargo){
 	$arr = [
 		'0' => 'Normal',
 		'1' => 'Sub Administrador',
 		'2' => 'Administrador'];
 	return $arr[$cargo];
+}
+function selecionadoMenu($par){
+	$url = explode('/',@$_GET['url'])[0];
+	if($url == $par){
+		echo 'class="menu-active"';
+	}
+}
+function verificaPermissaoMenu($permissao){
+	if($_SESSION['cargo'] >= $permissao){
+		return;
+	}else{
+		echo 'style = "display:none;"';
+	}
+}
+function verificaPermissaoPagina($permissao){
+	if($_SESSION['cargo'] >= $permissao){
+		return;
+	}else{
+		include('pages/permissao-negada.php');
+		die();
+	}
+}
+function verificarPermissaoEditarCargo($permissao){
+	if($_SESSION['cargo'] >= $permissao){
+		return;
+	}else{
+		echo 'style = "display:none;"';
+	}
 }
 ?>

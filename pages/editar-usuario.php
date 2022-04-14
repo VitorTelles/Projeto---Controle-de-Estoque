@@ -53,7 +53,7 @@
             <label>Nome:</label>
             <input type="text" name="nome" required value="<?php echo $_SESSION['nome'];?>">
         </div><!--form-group-->
-        <div class="form-group">
+        <div class="form-group" <?php verificarPermissaoEditarCargo(2); ?>>
             <label>Cargo:</label>
             <input type="text" name="cargo" required value="<?php echo $_SESSION['cargo'];?>">
         </div><!--form-group-->
