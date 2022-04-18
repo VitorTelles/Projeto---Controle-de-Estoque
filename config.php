@@ -1,5 +1,7 @@
 <?php 
-
+/*
+TODO: Variavel Global com os cargos!
+*/ 
 session_start();
 
 	date_default_timezone_set('America/Sao_Paulo');
@@ -21,13 +23,13 @@ define('USER','root');
 define('PASSWORD','');
 define('DATABASE','controle_estoque');
 
+//Variaveis Globais
+
+
 //Funções úteis do Painel de controle
-function pegaCargo($cargo){
-	$arr = [
-		'0' => 'Normal',
-		'1' => 'Sub Administrador',
-		'2' => 'Administrador'];
-	return $arr[$cargo];
+function pegaCargo($indice){
+	
+	return Painel::$cargos[$indice];
 }
 function selecionadoMenu($par){
 	$url = explode('/',@$_GET['url'])[0];

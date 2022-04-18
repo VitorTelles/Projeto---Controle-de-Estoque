@@ -50,8 +50,10 @@
             }
         }
         public static function uploadFile($file){
-            if(move_uploaded_file($file['tmp_name'],BASE_DIR.'/imagens/'.$file['name'])){
-                return $file['name'];
+            $formatoArquivo = explode('.',$file['name']);
+            $imagemNome = uniqid().'.'.$formatoArquivo[count($formatoArquivo) - 1];
+            if(move_uploaded_file($file['tmp_name'],BASE_DIR.'/imagens/'.$imagemNome)){
+                return $imagemNome;
             }else{
                 return false;
             }
@@ -60,6 +62,11 @@
         public static function deleteFile($file){
             @unlink(BASE_DIR.'/imagens/'.$file);
         }
+        
+        public static $cargos = [
+            '0' => 'Normal',
+            '1' => 'Sub Administrador',
+            '2' => 'Administrador'];
         
     }
 
