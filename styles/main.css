@@ -221,7 +221,20 @@ div.box-usuario{
     background: #bb8900;
 }
 /*MEDIAS*/
-
+@media  screen and (max-width: 1024px) {
+    .box-metrica-single{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .w50{
+        width: 100%;
+    }
+    .box-metrica-single{
+        width: 100%;
+        padding-top: 40%;
+    }
+}
 @media screen and (max-width: 768px){
     .menu{
         display: none;
@@ -236,6 +249,13 @@ div.box-usuario{
     }
 }
 @media screen and (max-width: 400px) {
+    .box-metrica-wraper h2{
+        font-size: 24px;
+    }
+    .box-metrica-wraper p{
+        padding: 10px 0;
+        font-size: 22px;
+    }
     .menu-wraper{
         width: 200px;
     }
