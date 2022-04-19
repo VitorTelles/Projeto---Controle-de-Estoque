@@ -8,7 +8,7 @@
                 $password = $_POST['password'];
                 $imagem = $_FILES['imagem'];
                 $imagem_atual = $_POST['imagem_atual'];
-                $cargo = $_SESSION['cargo'];
+                $cargo = $_POST['cargo'];
                 $usuario = new Usuario();
                 if($imagem['name'] != ''){
                     //Existe o upload de uma nova imagem temos que tratar...
