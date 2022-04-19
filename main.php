@@ -64,7 +64,7 @@
                         <i class="fa fa-bars"></i>
                      </div><!--menu-btn-->
                        <div class="logout">
-                            <a href="<?php echo INCLUDE_PATH?>"><i class="bi bi-house-door-fill"></i> <span>Página Inicial</span></a>
+                            <a <?php if(@$_GET['url'] == ''){ ?> style="background: #60727a;padding: 13px;" <?php } ?> href="<?php echo INCLUDE_PATH?>"><i class="bi bi-house-door-fill"></i> <span>Página Inicial</span></a>
                             <a href="<?php echo INCLUDE_PATH?>?logout"><i class="fa fa-sign-out-alt"></i></a>
                         </div><!--logout-->
                         <div class="clear"></div><!--estou usando flutuação, o que obriga a limpar-->

@@ -1,31 +1,14 @@
 <?php
     sleep(2);
-    session_start();
-	date_default_timezone_set('America/Sao_Paulo');
-	$autoload = function($class){
-		if($class == 'Email'){
-			require_once('classes/phpmailer/PHPMailerAutoload.php');
-		}
-		include('../classes/'.$class.'.php');
-	};
-
-    spl_autoload_register($autoload);
-	
-
-define('INCLUDE_PATH','http://localhost/Controle%20de%20Estoque/Projeto---Controle-de-Estoque/');
-define('BASE_DIR',__DIR__);
-//Conectar com Banco de Dados
-define('HOST','localhost');
-define('USER','root');
-define('PASSWORD','');
-define('DATABASE','controle_estoque');
+	include('../includeConstants.php');
+    /**/ 
 $data['sucesso'] = true;
-$data['erros'] = "";
+$data['mensagem'] = "";
 if(Painel::logado() == false){
     die("Você não está logado!");
 }
 /*Nosso código começa aqui!*/ 
-    $name = $_POST['nome'];
+    $nome = $_POST['nome'];
     $email = $_POST['email'];
     $tipo = $_POST['tipo_cliente'];
     $cpf = '';
@@ -35,11 +18,24 @@ if(Painel::logado() == false){
     }else if($tipo == 'juridico'){
         $cnpj = $_POST['cnpj'];
     }
+    $imagem = "";
     if(isset($_FILES['imagem'])){
-        $imagem = $_FILES['imagem'];
-    }else{
-        $data['sucesso'] = false;
-        $data['erros'] = "Imagem inválida/vaiza";
+        if(Painel::imagemValida($_FILES['imagem'])){
+            $imagem = $_FILES['imagem'];
+        }else{
+            $imagem = "";
+            $data['sucesso'] = false;
+            $data['mensagem'] = "A Imagem selecionada não é válida!";
+        }
+    }
+        
+    if($data['sucesso']){
+        if(is_array($imagem))
+            $imagem = Painel::uploadFile($imagem);
+        $sql = MySql::conectar()->prepare("INSERT INTO `tb_clientes` VALUES (null,?,?,?,?,?)");
+        $dadoFinal = ($cpf == '') ? $cnpj : $cpf;
+        $sql->execute(array($nome,$email,$tipo,$dadoFinal,$imagem));
+        //Só cadastrar 
     }
 
     die(json_encode($data));
