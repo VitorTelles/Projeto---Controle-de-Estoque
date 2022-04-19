@@ -42,7 +42,7 @@
                 <div class="items-menu">
                     <h2>Cadastros  <i class="bi bi-bag-plus"></i></h2>
                     <a <?php selecionadoMenu('cadastrar-produtos');?> href="<?php echo INCLUDE_PATH?>cadastrar-produtos"> Cadastrar Produtos</a>
-                    <a <?php selecionadoMenu('cadastrar-clientes');?> href=""> Cadastrar Clientes</a>
+                    <a <?php selecionadoMenu('cadastrar-clientes');?> href="<?php echo INCLUDE_PATH?>cadastrar-clientes"> Cadastrar Clientes</a>
                     <h2>Consultas  <i class="bi bi-search"></i></h2>
                     <a <?php selecionadoMenu('consultar-produtos');?> href=""> Consultar Produtos</a>
                     <a <?php selecionadoMenu('listar-clientes');?> href=""> Listar Clientes</a>
@@ -79,7 +79,11 @@
         
         
 
-        <script src="<?php echo INCLUDE_PATH?>scripts/jquery.js"></script>
-        <script src="<?php echo INCLUDE_PATH?>scripts/main.js"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/jquery.js" type="text/javascript"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/main.js" type="text/javascript"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/jquery.ajaxform.js" type="text/javascript"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/ajax.js" type="text/javascript"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/helperMask.js" type="text/javascript"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/jquery.mask.js" type="text/javascript"></script>
     </body>
 </html>
