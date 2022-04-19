@@ -45,3 +45,14 @@
     background-color:#f1c40f;
     color: #2d3436 ;
 }
+
+/*MEDIAS SCREENS*/
+@media screen and (max-width: 500px) {
+    .box-content input[type=submit],
+    .box-content form input[type=file]{
+        width: 100%;
+    }
+    
+    
+    
+}

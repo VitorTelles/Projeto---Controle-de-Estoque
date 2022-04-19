@@ -9,3 +9,10 @@
     border-radius: 12px;
     margin-top: 8px;
 }
+/*MEDIAS SCREENS*/
+@media screen and (max-width: 500px) {
+    .box-content input[type=submit],
+    .box-content form input[type=file]{
+        width: 100%;
+    }   
+}
