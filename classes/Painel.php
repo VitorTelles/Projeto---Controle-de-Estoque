@@ -11,7 +11,14 @@
             session_destroy();
             header('Location: '.INCLUDE_PATH);
         }
-
+        public static function loadJS($files,$page){
+            $url = explode('/',@$_GET['url'])[0];
+            if($page == $url){
+                foreach ($files as $key => $value){
+                    echo '<script src="'.INCLUDE_PATH.'scripts/'.$value.'"></script>';
+                }
+            }
+        }
         public static function redirect($url){
             echo '<script>location.href="'.$url.'"</script>';
             die();
