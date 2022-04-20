@@ -1,0 +1,57 @@
+
+.box-single-wraper{
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+.box-single{
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 230px;
+    border-radius: 5px;
+}
+.topo-box{
+    text-align: center;
+    color: #ccc;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+.topo-box h2{
+    font-size: 36px;
+}
+.body-box{
+    padding: 10px;
+}
+.body-box p{
+    color: #646464;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.group-btn a{
+    width: 25%;
+    height:2%;
+    border: 2px;
+    display: inline-block;
+    border-radius: 10px;
+    padding:8px;
+    color:white;
+    background-color: #2d3436;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.btn-delete:hover{
+    background-color: #e74c3c;
+    color: black ;
+}
+.btn-edit:hover{
+    background-color: #f1c40f;
+    color: black ;
+}
+@media screen and (max-width: 1024px) {
+    .box-single-wraper{
+        width: 100%;
+        min-height: 0;
+    }
+}

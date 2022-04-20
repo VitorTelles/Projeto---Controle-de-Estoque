@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/editar-usuario.css">
     <link rel="stylesheet" href="./styles/cadastrar-usuario.css">
+    <link rel="stylesheet" href="./styles/listar-clientes.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Controle de Estoque</title>
@@ -45,7 +46,7 @@
                     <a <?php selecionadoMenu('cadastrar-clientes');?> href="<?php echo INCLUDE_PATH?>cadastrar-clientes"> Cadastrar Clientes</a>
                     <h2>Consultas  <i class="bi bi-search"></i></h2>
                     <a <?php selecionadoMenu('consultar-produtos');?> href=""> Consultar Produtos</a>
-                    <a <?php selecionadoMenu('listar-clientes');?> href=""> Listar Clientes</a>
+                    <a <?php selecionadoMenu('listar-clientes');?> href="<?php echo INCLUDE_PATH?>listar-clientes"> Listar Clientes</a>
                     <h2>Relatórios  <i class="bi bi-clipboard2-data"></i></h2>
                     <a <?php selecionadoMenu('relatorios');?> href=""> Emitir Relatório   </a>
                     <h2>Movimentos  <i class="bi bi-arrow-down-up"></i></h2>
