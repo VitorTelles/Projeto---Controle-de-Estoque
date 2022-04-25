@@ -1,4 +1,6 @@
+
 /*CSS DO PAINEL DE CONTROLE*/
+
 *{
     margin: 0;
     padding: 0;
@@ -197,14 +199,42 @@ div.box-usuario{
 	padding: 10px 0;
 	font-size: 26px;
 }
+.busca{
+	margin: 10px 0;
+	width: 100%;
+	padding:8px 10px;
+}
 
+.busca form{
+	margin: 0;
+}
+
+.busca h4{
+	font-weight: lighter;
+	font-size: 23px;
+	color: #646464;
+}
+
+.busca-result{
+	color: #646464;
+	border-top:3px solid #ccc;
+}
+
+.busca-result p{
+	font-size: 16px;
+}
 /*Alertas úteis!*/
 
 .box-alert{
+    margin-bottom: 8px;
     width: 100%;
     padding: 8px 0;
     text-align: center;
     border-radius: 12px;
+}
+.box-alert a{
+    color: white;
+    font-weight: bold;
 }
 .sucesso{
     background: #6ab04c;
@@ -216,7 +246,10 @@ div.box-usuario{
     color: white;
     font-weight: bold;
 }
-
+.atencao{
+    background: #d35400;
+    color: white;
+}
 .menu-active{
     background: #bb8900;
 }

@@ -1,6 +1,13 @@
 	
 <div class="box-content">
     <h2><i class="bi bi-people-fill"></i> - Listar Clientes</h2>
+    <div class="busca">
+		<form method="post">
+			<h4><i class="fa fa-search"></i> Realizar uma busca: </h4>
+			<input placeholder="Procure por: nome, email, cpf ou cnpj..." type="text" name="busca">
+			<input type="submit" name="acao" value="Buscar!">
+		</form>
+	</div><!--busca-->
     <?php 
     $clientes = MySql::conectar()->prepare("SELECT * FROM `tb_clientes`");
     $clientes->execute();
