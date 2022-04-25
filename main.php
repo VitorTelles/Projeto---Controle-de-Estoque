@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/cadastrar-usuario.css">
     <link rel="stylesheet" href="./styles/listar-clientes.css">
     <link rel="stylesheet" href="./styles/cadastrar-produtos.css">
+    <link rel="stylesheet" href="./styles/consultar-produtos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <title>Controle de Estoque</title>
