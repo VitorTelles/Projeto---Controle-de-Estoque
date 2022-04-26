@@ -64,7 +64,7 @@
             <input type="file" name="imagem">
         </div><!--form-group-->
         <div class="form-group">
-            <input type="submit" name="acao" value="Atualizar!">
+            <input type="submit" name="acao" value="Cadastrar!">
         </div><!--form-group-->
     </form>
 </div><!--box-content-->
