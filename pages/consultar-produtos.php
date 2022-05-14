@@ -72,7 +72,7 @@
                             </div><!--group-btn-->
 
                             <div class="group-btn">
-                                <a actionBtn="delete" item_id = "<?php echo $value['id'];?>" class="btn delete" href=""><i class="fa fa-times"></i> Excluir</a>
+                                <a actionBtn="delete" item_id = "<?php echo $value['id']; ?>" class="btn delete" href=""><i class="fa fa-times"></i> Excluir</a>
                                 <a class="btn-edit" href="<?php echo INCLUDE_PATH?>editar-produto?id=<?php echo $value['id'];?>"><i class="fa fa-pencil"></i> Editar</a>
                             </div><!--group-btn-->
                             
@@ -139,7 +139,7 @@
                             </div><!--group-btn-->
 
                             <div class="group-btn">
-                                <a actionBtn="delete" item_id = "<?php echo $value['id'];?>" class="btn delete" href=""><i class="fa fa-times"></i> Excluir</a>
+                                <a actionBtn="delete" item_id = "<?php echo $value['id'];?>" class="btn delete" href="<?php echo INCLUDE_PATH?>"><i class="fa fa-times"></i> Excluir</a>
                                 <a class="btn-edit" href="<?php echo INCLUDE_PATH?>editar-produto?id=<?php echo $value['id'];?>"><i class="fa fa-pencil"></i> Editar</a>
                             </div><!--group-btn-->
                             
