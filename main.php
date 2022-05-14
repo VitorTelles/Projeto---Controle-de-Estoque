@@ -84,11 +84,13 @@
         
 
         <script  src="<?php echo INCLUDE_PATH?>scripts/jquery.js" type="text/javascript"></script>
-        <script  src="<?php echo INCLUDE_PATH?>scripts/constants.js" type="text/javascript"></script>
-        <script  src="<?php echo INCLUDE_PATH?>scripts/main.js" type="text/javascript"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/jquery.mask.js" type="text/javascript"></script>
         <script  src="<?php echo INCLUDE_PATH?>scripts/jquery.ajaxform.js" type="text/javascript"></script>
         <script  src="<?php echo INCLUDE_PATH?>scripts/helperMask.js" type="text/javascript"></script>
-        <script  src="<?php echo INCLUDE_PATH?>scripts/jquery.mask.js" type="text/javascript"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/constants.js" type="text/javascript"></script>
+        <script  src="<?php echo INCLUDE_PATH?>scripts/main.js" type="text/javascript"></script>
+        
+        
         <?php Painel::loadJS(array('ajax.js'),'listar-clientes');?>
         <?php Painel::loadJS(array('ajax.js'),'cadastrar-clientes');?>
         <?php Painel::loadJS(array('ajax.js'),'editar-cliente');?>
