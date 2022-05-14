@@ -1,4 +1,5 @@
 <?php 
+define('INCLUDE_PATH','http://localhost/Controle%20de%20Estoque/Projeto---Controle-de-Estoque/');
 /*
 TODO: Variavel Global com os cargos!
 */ 
@@ -15,7 +16,7 @@ session_start();
     spl_autoload_register($autoload);
 	
 
-define('INCLUDE_PATH','http://localhost/Controle%20de%20Estoque/Projeto---Controle-de-Estoque/');
+
 define('BASE_DIR',__DIR__);
 //Conectar com Banco de Dados
 define('HOST','localhost');
