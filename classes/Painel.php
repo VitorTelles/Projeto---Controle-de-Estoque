@@ -2,6 +2,13 @@
 
     class Painel{
         
+        public static function formatarMoedaBd($valor){
+			$valor = str_replace('.', '', $valor);
+			$valor = str_replace(',', '.', $valor);
+			return $valor;
+		}
+
+
         Public static function logado(){
             return isset($_SESSION['login']) ? true : false;
         }

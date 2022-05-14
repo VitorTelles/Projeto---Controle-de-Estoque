@@ -9,7 +9,7 @@
             $altura = $_POST['altura'];
             $comprimento = $_POST['comprimento'];
             $peso = $_POST['peso'];
-            $preco = $_POST['preco'];
+            $preco = Painel::formatarMoedaBd($_POST['preco']);
             $quantidade = $_POST['quantidade'];
 
             $imagens = array();
@@ -81,7 +81,7 @@
 
         <div class="form-group">
                 <label>Preço:</label>
-                <input type="text" name="preco" >
+                <input type="text" name="preco">
         </div><!--form-group-->
 
         <div class="form-group">
