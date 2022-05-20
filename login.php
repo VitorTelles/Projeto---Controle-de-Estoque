@@ -22,7 +22,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" type="text/css" href="./styles/login.css">
+    <link rel="stylesheet" href="./mediascreen/screen.css">
     <title>Controle de Estoque</title>
 </head>
 <body>
@@ -55,30 +57,35 @@
         }
     ?>
         <!--  Formulário de login -->
-    <form class="form" action="#" method="post">
-        <div class="card">
-            <div class="card-top">
-                <img id="icon" src="./imagens/xerife_icon.png" alt="">
-                <h2 class="title"> Controle de Estoque</h2>
-                <p>Faça seu login</p>
-            </div>
-            <div class="card-group">
-                <label>Usuário:</label>
-                <input type="text" name="user" placeholder="Digite seu email" required>
-            </div>
-            <div class="card-group">
-                <label>Senha:</label>
-                <input type="password" name="password" placeholder="Digite sua senha" required>
-            </div>
-            <div class="card-group">
-                <label> <input type="checkbox" name="lembrar"> Lembrar-me</label>
-            </div>
-            <div class="card-group">
-                <button class="btn" type="submit" name="acao" >Entrar</button>
-            </div>
-        </div>
-    </form>
-    <script src="./scripts/index.js"></script>
+        <section class="container">
+        <aside class="form-login">
+            <span class="title user-no-selection">Sheriff Commerce</span>
+            <span class="subtitle user-no-selection"><p>Faça seu login</p></span>
+
+            <form  method="post" action="#">
+                <div class="input-field">
+                    <input type="text" name="user" placeholder="Usuário" required>
+                    <i class="uil uil-user"></i>
+                </div>
+                <div class="input-field">
+                    <input type="password" name="password" class="password" placeholder="Senha" required>
+                    <i class="uil uil-lock icon"></i>
+                    <i class="uil uil-eye-slash showHidePw"></i>
+                </div>
+
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" id="logCheck">
+                        <label for="logCheck" class="text user-no-selection" name="lembrar">Lembre-se de mim</label>
+                    </div>
+
+                </div>
+
+                <div class="input-field button">
+                    <input type="submit" name="acao" value="Login">
+                </div>
+            </form>
+    <script src="scripts/login.js"></script>
 
 </body>
 </html>

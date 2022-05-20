@@ -1,71 +1,138 @@
-body{
-    margin:0;
-    padding:0;
-    background-color: lightgrey;
-    font-family: sans-serif;
+* {
+    margin    : 0;
+    padding   : 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-.form{
-    width: 400px;
+
+body {
+    height: 100vh;
+    display: flex;
+    background-image: url(../imagens/backgroundLogin.jpg);
+}
+.user-no-selection {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 30%;
+    background-color: #fff;
+}
+
+.container .form-login {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
     margin: auto;
-    padding-top:40px;
-    
-}
-.card{
-    box-shadow: 8px 10px 10px black;
-    background-color: white;
-    padding:40px;
-    border-radius:15px;   
-}
-.card-top{
-    text-align: center;
-}
-/* foto do login */
-#icon{
-    width: 100px;
-    height: 100px;
-    border-radius:50px; 
-    box-shadow: 10px 10px 10px black;
-}
-label{
-    padding:5px;
-    font-size: 18px;
-    font-weight: 700;
-}
-.card-group > label{
-    width: 100%;
-    color: black;
-    font-size: 20px;
-    display:block;
-}
-.card-group > input {
-    border:2px solid;
-    border-radius: 8px;
-    outline: 0;
-    width: 100%;
-    height: 25px;
-    padding:5px;
+
 }
 
-.title{
-    color:black;
+.container .form-login .title {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
 }
 
-.card-group > .btn{
-    width: 335px;
-    height:40px;
-    border:0px;
-    border-radius: 10px;
-    padding:8px;
-    color:white;
-    background-color: black;
-    font-size: 20px;
-    outline: 0;
-    transition: 0.5s;
+.container .subtitle {
+    display: flex;
     text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 300;
 }
-.btn:hover{
-    background-color:#0ff1f1;
-    color: black ;
-    
+
+.form-login .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: #feef4c ;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+    color: #feef4c ;
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.input-field i.showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form-login .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin: 0 8px -2px 4px;
+}
+
+.form-login .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.form-login .button {
+    margin-top: 35px;
+}
+
+.form-login .button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+    background-color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #000000db;
 }
