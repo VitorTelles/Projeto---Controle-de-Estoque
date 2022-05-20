@@ -22,6 +22,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">-->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" type="text/css" href="./styles/login.css">
     <link rel="stylesheet" href="./mediascreen/screen.css">
@@ -60,7 +61,7 @@
         <section class="container">
         <aside class="form-login">
             <span class="title user-no-selection">Sheriff Commerce</span>
-            <span class="subtitle user-no-selection"><p>Faça seu login</p></span>
+            <span class="subtitle user-no-selection"><p>Faça seu login:</p></span>
 
             <form  method="post" action="#">
                 <div class="input-field">
@@ -85,6 +86,7 @@
                     <input type="submit" name="acao" value="Login">
                 </div>
             </form>
+        </aside>
     <script src="scripts/login.js"></script>
 
 </body>

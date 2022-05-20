@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@300;400;500;600;700&display=swap');
 * {
-    margin    : 0;
-    padding   : 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -135,4 +136,47 @@ body {
 
 .button input:hover {
     background-color: #000000db;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../imagens/backgroundLogin.jpg);
+    }
+    .user-no-selection {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .container {
+        position: relative;
+        max-width: 350px;
+        max-height: 450px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .container .form-login {
+        padding: 30px;
+        width: 100%;
+
+    }
+
+    .container .form-login .title {
+        position: relative;
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+    .animated-text {
+        display: none;
+    }
 }
