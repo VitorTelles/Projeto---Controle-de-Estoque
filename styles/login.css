@@ -65,11 +65,7 @@ label{
     text-align: center;
 }
 .btn:hover{
-<<<<<<< HEAD
-    background-color: blue;
-=======
     background-color:#0ff1f1;
->>>>>>> 1f0a27f118dc41d632ee3f374a511c3f1dc8464b
     color: black ;
     
 }
