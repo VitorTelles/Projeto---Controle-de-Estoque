@@ -67,6 +67,7 @@ body {
     outline: none;
     font-size: 16px;
     border-bottom: 2px solid #ccc;
+    border-radius: 6px;
     border-top: 2px solid transparent;
     transition: all 0.2s ease;
 }
@@ -136,6 +137,24 @@ body {
 
 .button input:hover {
     background-color: #000000db;
+}
+
+#sherifftext{
+    background-image:
+    linear-gradient(
+        transparent 0%,
+        transparent 90%,
+        #f9ca24 90%,
+        #f9ca24 100%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-position-x: right;
+    transition: background-size 500ms;
+}
+#sherifftext:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
 }
 
 @media screen and (max-width: 768px) {

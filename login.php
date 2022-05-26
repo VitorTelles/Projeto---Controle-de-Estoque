@@ -60,7 +60,7 @@
         <!--  Formulário de login -->
         <section class="container">
         <aside class="form-login">
-            <span class="title user-no-selection">Sheriff Commerce</span>
+            <span class="title user-no-selection" id="sherifftext">Sheriff Commerce</span>
             <span class="subtitle user-no-selection"><p>Faça seu login:</p></span>
 
             <form  method="post" action="#">
