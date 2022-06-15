@@ -213,6 +213,18 @@
                     Painel::update(array('nome_tabela'=>$tabela,'id'=>$infoItemAtual['id'],'order_id'=>$itemBefore['order_id']));
                 }
             }
+
+            public static function getTotalItemsCarrinho(){
+                if(isset($_SESSION['carrinho'])){
+                    $amount = 0;
+                    foreach($_SESSION['carrinho'] as $key => $value){
+                        $amount+=$value;
+                    }
+                }else{
+                    return 0;
+                }
+                return $amount;      
+            }
     }
 
 

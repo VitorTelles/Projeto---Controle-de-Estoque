@@ -58,6 +58,7 @@
                     <h2>Administração do Painel  <i class="bi bi-gear"></i></h2>
                     <a <?php selecionadoMenu('cadastrar-usuario');?> <?php verificaPermissaoMenu(2);?> href="<?php echo INCLUDE_PATH?>cadastrar-usuario"> Inserir novo usuário</a>
                     <a <?php selecionadoMenu('editar-usuario');?> href="<?php echo INCLUDE_PATH?>editar-usuario"> Editar usuário</a>
+                    <a <?php selecionadoMenu('pedidos');?> href="<?php echo INCLUDE_PATH?>pedidos"> Pedidos</a>
                 </div><!--items-menu-->
             </div><!--menu-wraper-->
         </div><!--MENU LATERAL-->
